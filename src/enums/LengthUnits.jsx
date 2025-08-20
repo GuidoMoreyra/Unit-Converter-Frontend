@@ -1,0 +1,10 @@
+export const LengthUnits = {
+  MILIMETER: "MILIMETER",
+  CENTIMETER: "CENTIMETER",
+  METER: "METER",
+  KILOMETER: "KILOMETER",
+  INCH: "INCH",
+  FOOT: "FOOT",
+  YARD: "YARD",
+  MILE: "MILE"
+};

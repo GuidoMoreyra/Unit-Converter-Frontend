@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: #f5efd7;
+}
+
+.main-container {
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 6px;
+  padding: 16px;
+  background-color: #ffffff;
+}
+
+.converter-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.converter{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px; 
+    padding: 20px;
+}
+
+#convertir{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+/* Estilo general para inputs y selects */
+input[type="number"], input[type="text"], select {
+  padding: 8px 12px;
+  margin: 5px 0;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus,
+select:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 5px rgba(0,123,255,0.5);
+}
+
+/* Estilo para botones */
+button {
+  background-color: #007BFF;
+  color: white;
+  padding: 8px 16px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.converter-nav li {
+  list-style: none;
+  padding: 8px 16px;
+  padding-bottom: 0;
+  margin: 0 5px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.converter-nav li:hover {
+  border-bottom-color: #007BFF;
+}
